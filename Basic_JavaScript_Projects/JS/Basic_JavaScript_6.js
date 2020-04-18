@@ -20,10 +20,10 @@ function myFunction() {
 	" manufactured in " + Erik.Vehicle_Year;
 }
 /*Nested Funciton*/
-document.getElementById("nest").innerHTML = add();
 function add() {
     var counter=0;
     function plus() {counter += 1;}
     plus();
     return counter;
 }
+document.getElementById("nest").innerHTML = add();
