@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic HTML 9</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+                <div class="numbertext">1/4</div>
+                <img src="../Basic_JavaScript_Projects/IMAGES/ironman.jpg">
+                <div class="text">Iron Man</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2/4</div>
+                <img src="../Basic_JavaScript_Projects/IMAGES/thor.jpg">
+                <div class="text">Thor Odinson</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">3/4</div>
+                <img src="../Basic_JavaScript_Projects/IMAGES/captainamerica.jpg">
+                <div class="text">Captian America</div>
+            </div>
+
+            <div class="mySlides">
+                <p>Which one of the these characters do you like the most?</p>
+                <input id="seconds" value=""/>
+                <button onclick="countdown()">Response to your answer!</button>
+                <p id="timer"></p>
+                <br>
+                <img src="../Basic_JavaScript_Projects/IMAGES/marvelstrinity.jpg">
+                <div class="text">Marvel's Trinity</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <link rel="stylesheet" type="text/css" href="../Basic_JavaScript_Projects/CSS/Basic_CSS_1.css">
+        <script src = "../Basic_JavaScript_Projects/JS/Basic_JavaScript_9.js"></script>
+    </body>
+</html>
