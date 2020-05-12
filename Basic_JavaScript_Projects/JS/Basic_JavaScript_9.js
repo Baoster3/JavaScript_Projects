@@ -28,17 +28,18 @@ function showSlides(n) {
 }
 
 document.write("<br>");
-
-function countdown() {
-    var seconds = document.getElementById("seconds").value;
-
-    function tick() {
-        seconds = 10;
-        timer.innerHTML = seconds;
-        setTimeout(tick, 1000);
-    if(seconds == -1){
-        alert("Nice Choice!!");
-    }
+// Countdown Function
+function countdown_hero() {
+    var chosen_hero = document.getElementById("fav_hero").value;
+    var start = 10;
+    var seconds = start;
+    var countdown_timer = setInterval(function() {
+        seconds--;
+        if(seconds <= 0) {
+            document.getElementById("timer").innerHTML = chosen_hero + " is a great choice";
+        }else{
+            document.getElementById("timer").innerHTML = seconds;
         }
-    tick();
+    }, 1000);
 }
+    
