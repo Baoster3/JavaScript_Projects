@@ -161,7 +161,6 @@ function saveSettings() {
 
 // this function returns's the currently assigned avatar for each player
 function getAvatar() {
-    var p1Avatar = document.getElementById("p1Display").innerHTML;
     var p2Avatar = document.getElementById("p2Display").innerHTML;
     var avatarArray = [p1Avatar,p2Avatar];
     return avatarArray;
@@ -170,6 +169,7 @@ function getAvatar() {
 // this function will return the 's avatar
 function determineAvatar() {
     // determine the correct avatar to paint for the 
+
     var avatarArray = getAvatar(); // returns an array of both player's assigned avatars
     var active = document.getElementById('showPlayer').innerHTML; // get 
     p1Avatar = avatarArray[0];
@@ -204,7 +204,7 @@ function avatarPlaced() {
 // and check the proposed move for a validity
 function check(info,square) {
     for (var i in info) {
-        var tempInfo = info[i].charAt(0); // comaring index of square
+        var tempInfo = info[i].charAt(O); // comaring index of square
         if (tempInfo == square) {
             return tempInfo;
         }
@@ -441,8 +441,9 @@ function checkWinCon2(info,squareArray) {
     winner(winDetected,winCon2); // winon1 is the array of win combo
 }
 
-// checking for wincon squares 678
+// checking for wincon 678
 function checkWinCon3(info,squareArray) {
+
     var winDetected = "on";
     var winCon3 = [6,7,8];
     // iterate through the growing array during
@@ -473,6 +474,7 @@ function checkWinCon3(info,squareArray) {
 }
 
 // checking for wincon squares 036
+
 function checkWinCon4(info,squareArray) {
     var winDetected = "on";
     var winCon4 = [0,3,6];
