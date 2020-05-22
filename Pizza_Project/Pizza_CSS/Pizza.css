@@ -1,0 +1,99 @@
+body {
+    background-color: lightcoral;
+}
+
+h1 {
+    color: black;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    color: darkred;
+}
+
+#menuBG {
+    background-color: lightcoral;
+    width: 400px;
+    height: 600px;
+    margin: 10px auto;
+    float: center;
+}
+
+#frmMenu {
+    width: 613px;
+    height: 420px;
+}
+
+#totalPrice {
+    width: 190px;
+    height: 200px;
+    margin: 0 auto;
+    float: right;
+    color: yellow;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    float: left;
+    border: 2px solid black;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+    width: 201px;
+    height: 200px;
+    margin: 0 auto;
+    float: left;
+    border: 2px solid black;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 0 auto;
+    border: 2px solid black;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#showText {
+    width: 201px;
+    height: 200px;
+    margin: 0px auto;
+    float: left;
+    border: 2px solid black;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cart {
+    top: 0; margin: 0px auto;
+    width: 400px;
+    height:200px;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 450px;
+    height: 40px;
+    color: darkred;
+    background-color: orange;
+    float: center;
+}
+
+#btnOrder:hover {
+    color: orange;
+    background-color: grey;
+}
+
