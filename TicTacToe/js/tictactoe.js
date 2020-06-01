@@ -7,7 +7,7 @@ function placeXOrO(squareNumber) {
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
         let select = document.getElementById(squareNumber);
         if (activePlayer ==='X') {
-            select.style.backgroundImage= 'url("../TicTacToe/images/x2.jpg")';
+            select.style.backgroundImage= 'url("../TicTacToe/images/x2.jpg")',
         } else {
             select.style.backgroundImage = 'url("../TicTacToe/images/o2.jpg")';
         }
