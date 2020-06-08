@@ -7,7 +7,7 @@ function placeXOrO(squareNumber) {
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
         let select = document.getElementById(squareNumber);
         if (activePlayer ==='X') {
-            select.style.backgroundImage= 'url("../TicTacToe/images/x2.jpg")',
+            select.style.backgroundImage= 'url("../TicTacToe/images/x2.jpg")';
         } else {
             select.style.backgroundImage = 'url("../TicTacToe/images/o2.jpg")';
         }
@@ -66,7 +66,7 @@ function checkWinConditions() {
     // O 3 4 5 condition.
     else if (arrayIncludes('3O', '4O', '5O')) { drawWinLine(50, 304, 558, 304); }
     // O 6 7 8 condition.
-    else if (arrayIncludes('6O', '7O', '8O')) { drawWinLine(50, 304, 558, 508); }
+    else if (arrayIncludes('6O', '7O', '8O')) { drawWinLine(50, 508, 558, 508); }
     // O 0 3 6 condition.
     else if (arrayIncludes('0O', '3O', '6O')) { drawWinLine(100, 50, 100, 558); }
     // O 1 4 7 condition.
